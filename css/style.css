@@ -1,1 +1,116 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-footer {
+  background-color: #f5f6fc;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.feature {
+  max-width: 200px;
+}
+
+.feature img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.feature h4 {
+  margin: 10px 0 5px;
+}
+
+.mailing-list h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.mailing-list p {
+  margin: 10px 0 20px;
+  color: #555;
+}
+
+.mailing-list form {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.mailing-list input {
+  padding: 12px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 3px 0 0 3px;
+  font-size: 16px;
+}
+
+.mailing-list button {
+  padding: 12px 24px;
+  background-color: #1d3b56;
+  color: #fff;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.bottom-footer {
+  background-color: #16354d;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.right {
+  flex: 1 1 45%;
+  margin-bottom: 20px;
+  direction: rtl;
+  text-align: right;
+}
+
+.left {
+  flex: 1 1 45%;
+  margin-bottom: 20px;
+  direction: ltr;
+  text-align: left;
+}
+
+
+.left p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.right h3 {
+  margin-bottom: 15px;
+
+}
+
+.insta-grid {
+  display: flex;
+  gap: 10px;
+}
+
+.insta-grid img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
 
