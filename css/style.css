@@ -52,6 +52,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 3px 0 0 3px;
   font-size: 16px;
+   text-align: right;
 }
 
 .mailing-list button {
@@ -76,25 +77,28 @@ body {
   margin: auto;
   flex-wrap: wrap;
 }
+.footer-social{
+display: flex;
+  justify-content: left;
+}
+
+.left{
+text-align: center;
+
+}
 
 .right {
   flex: 1 1 45%;
   margin-bottom: 20px;
   direction: rtl;
-  text-align: right;
+  text-align: center
+  ;
 }
 
-.left {
-  flex: 1 1 45%;
-  margin-bottom: 20px;
-  direction: ltr;
-  text-align: left;
-}
-
-
-.left p {
-  line-height: 1.6;
-  font-size: 14px;
+.footer-social img{
+width: 50px;
+  height: auto;
+  padding: 6%;
 }
 
 .right h3 {
@@ -102,15 +106,6 @@ body {
 
 }
 
-.insta-grid {
-  display: flex;
-  gap: 10px;
+.policy{
+ text-align: right;
 }
-
-.insta-grid img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
