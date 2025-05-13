@@ -119,9 +119,31 @@ h5 {
 	font-size: 20px;
 }
 
+h6 { 
+	color: #333;
+	font-size: 20px;
+  }
+  
+h7 { 
+	color: #333;
+	font-size: 20px;
+  }
+  
 .container {
   display: flex;
-  gap: 10px;
+  gap: 30px;
+  flex-wrap; wrap:
+  justify-content: center;
 }
 
+.item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;
+}
 
+.container img {
+  height: 40px;
+  margin-bottom: 10px;
+}
