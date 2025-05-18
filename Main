@@ -1,3 +1,31 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מחפשת מוצר ספציפי?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="item">
+      <img src="/api/placeholder/250/250" alt="ארונות">
+      <h5>ארונות שאהבתי</h5>
+    </div>
+    
+    <div class="item">
+      <img src="/api/placeholder/250/250" alt="שמלות">
+      <h5>שמלות</h5>
+    </div>
+    
+    <div class="item">
+      <img src="/api/placeholder/250/250" alt="חליפות">
+      <h5>חליפות</h5>
+    </div>
+  </div>
+</body>
+</html>
+
 
   <title>מחפשת מוצר ספציפי?</title>
   
