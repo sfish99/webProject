@@ -223,7 +223,7 @@ header .container-fluid{
   color:#fff;
 }
 
-.cta-btn{
+.btn{
   background:#004b71;
   color:#fff;
   font-weight:600;
@@ -234,6 +234,33 @@ header .container-fluid{
   transition:background .2s;
 }
 
-.cta-btn:hover{
+.btn:hover{
   background:#006298;
+}
+
+.find_closet{
+  position: relative;
+  height: 400px;
+  background: url('../images/chose.jpg') no-repeat center/cover;
+}
+.box{
+  position: absolute;
+  text-decoration: rtl;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  background-color: rgba(224, 242, 254, 0.9);
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 300px;
+}
+.find_closet h1{
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  direction: rtl;
+}
+.find_closet p{
+  margin: 0 0 1rem;
+  line-height: 1.4;
+  direction: rtl;
 }
