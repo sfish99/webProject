@@ -238,12 +238,13 @@ header .container-fluid{
   background:#006298;
 }
 
-.find_closet{
+.find_closet {
   position: relative;
   height: 400px;
-  background: url('../images/pick_your_closet.jpeg') no-repeat center/cover;
+  background: url('../images/find_your_closet.jpeg') no-repeat center/cover;
 }
-.box{
+
+.box {
   position: absolute;
   text-decoration: rtl;
   top: 50%;
@@ -254,13 +255,24 @@ header .container-fluid{
   border-radius: 8px;
   max-width: 300px;
 }
-.find_closet h1{
+
+.find_closet h1 {
   margin: 0 0 0.5rem;
   font-size: 1.5rem;
   direction: rtl;
 }
-.find_closet p{
+
+.find_closet p {
   margin: 0 0 1rem;
   line-height: 1.4;
   direction: rtl;
+}
+
+section h2{
+  direction: rtl;
+  text-align: center;
+}
+
+section{
+  padding: 2.5%;
 }
