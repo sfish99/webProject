@@ -241,7 +241,7 @@ header .container-fluid{
 .find_closet{
   position: relative;
   height: 400px;
-  background: url('../images/chose.jpg') no-repeat center/cover;
+  background: url('../images/pick_your_closet.jpeg') no-repeat center/cover;
 }
 .box{
   position: absolute;
