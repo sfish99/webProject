@@ -117,45 +117,6 @@ width: 50px;
  text-align: right;
 }
 
-.insta-grid img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-
-
-.container {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  overflow: hidden; 
-}
-
-.item {
-  float: right;
-  width: 30%;
-  margin: 0 1.5%;
-  text-align: center;
-}
-
-.item img {
-  width: 100%;
-  height: auto;
-  max-height: 250px;
-  object-fit: cover;
-  display: block;
-  margin-bottom: 10px;
-  background-color: #f2f2f2;
-}
-
-.item h5 {
-  font-size: 16px;
-  font-weight: normal;
-  color: #333;
-  text-align: center;
-}
 
 header{
   position:fixed;
@@ -246,45 +207,6 @@ header .container-fluid{
 
 .btn:hover{
   background:#006298;
-}
-
-.find_closet {
-  position: relative;
-  height: 400px;
-  background: url('../images/find_your_closet.jpeg') no-repeat center/cover;
-}
-
-.box {
-  position: absolute;
-  text-decoration: rtl;
-  top: 50%;
-  right: 10%;
-  transform: translateY(-50%);
-  background-color: rgba(224, 242, 254, 0.9);
-  padding: 1.5rem;
-  border-radius: 8px;
-  max-width: 300px;
-}
-
-.find_closet h1 {
-  margin: 0 0 0.5rem;
-  font-size: 1.5rem;
-  direction: rtl;
-}
-
-.find_closet p {
-  margin: 0 0 1rem;
-  line-height: 1.4;
-  direction: rtl;
-}
-
-section h2{
-  direction: rtl;
-  text-align: center;
-}
-
-section{
-  padding: 2.5%;
 }
 
 .hoverNoImp {

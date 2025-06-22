@@ -1,0 +1,62 @@
+
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+h1 {
+  font-size: 21 px;
+  margin-bottom: 30px;
+  margin-top:80px;
+  color: #333;
+}
+.slider {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.slider div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider img {
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+   display: block;
+   margin: 0 auto;
+  box-shadow: 15px 9px 15px rgba(1,1,1,0.3);
+}
+
+#footer{
+margin-top: 100px;
+}
+.signUpBtn {
+  margin-top: 30px;
+  display: inline-flex;
+  align-items: center;
+  color:#004b71;
+  background-color: #f5f6fc;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  gap : 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.signUpBtn img {
+  width: 20px;
+  height: 20px;
+  color:#004b71;
+}
+#thankYouMessage {
+  display: none;
+  font-size: 12px;
+  margin-top: 4px;
+}
