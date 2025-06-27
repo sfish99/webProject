@@ -19,12 +19,43 @@ body {
 .features {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  align-items: center;
+  gap: 4vw;
   margin-bottom: 40px;
 }
 
+/* גודל קטן */
+@media (max-width: 767px) {
+    .feature {
+        font-size: 14px
+    }
+    .mailing-list h2{
+         font-size: 18px
+        }
+}
+
+/* גודל בינוני */
+@media (min-width: 768px) and (max-width: 1023px) {
+ .feature {
+        font-size: 16px
+    }
+    .mailing-list h2{
+     font-size: 20px
+    }
+}
+
+/* גודל גדול */
+@media (min-width: 1024px) {
+ .feature {
+        font-size: 18px;
+    }
+     .mailing-list h2{
+         font-size: 24px
+        }
+}
+
 .feature {
-  max-width: 200px;
+  width: 33%;
 }
 
 .feature img {
@@ -37,7 +68,6 @@ body {
 }
 
 .mailing-list h2 {
-  font-size: 24px;
   font-weight: 700;
 }
 
