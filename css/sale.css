@@ -48,7 +48,7 @@ margin-top: 100px;
   text-decoration: none;
 }
 
-
+/* הוספת מדיה קווריז לפי גדלי מסך נפוצים */
 
 /* גודל קטן מאוד */
 @media (max-width: 455px) {
