@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>תוצאות חיפוש</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <h1>תוצאות עבור: <span id="searchTerm"></span></h1>
+
+  <div class="product" data-name="שמלה שחורה" data-price="180₪" data-size="M" data-closet='{"owner":"נועה פרידמן","rating":4,"items":["שמלה שחורה","עליונית ורודה"]}'>
+    <img src=" " width="150">
+    <p>שמלה שחורה</p>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('#searchTerm').text(localStorage.getItem('searchQuery'));
+      $('.product').click(function () {
+        const product = {
+          name: $(this).data('name'),
+          price: $(this).data('price'),
+          size: $(this).data('size'),
+          closetOwner: JSON.parse($(this).attr('data-closet'))
+        };
+        localStorage.setItem('selectedProduct', JSON.stringify(product));
+        localStorage.setItem('closetOwner', JSON.stringify(product.closetOwner));
+        window.location.href = 'product.html';
+      });
+    });
+  </script>
+</body>
+</html>
