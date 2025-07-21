@@ -13,22 +13,18 @@
     <img src=" images/black_mini_dress.jpeg" width="150">
     <p>שמלה שחורה</p>
   </div>
+<!-- jquery קישור ל -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <script>
-    $(document).ready(function () {
-      $('#searchTerm').text(localStorage.getItem('searchQuery'));
-      $('.product').click(function () {
-        const product = {
-          name: $(this).data('name'),
-          price: $(this).data('price'),
-          size: $(this).data('size'),
-          closetOwner: JSON.parse($(this).attr('data-closet'))
-        };
-        localStorage.setItem('selectedProduct', JSON.stringify(product));
-        localStorage.setItem('closetOwner', JSON.stringify(product.closetOwner));
-        window.location.href = 'product.html';
-      });
-    });
-  </script>
+<!-- סליידר ג׳אווה סקריפט -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- טעינה של סקריפט של העמוד מקובץ חיצוני -->
+<script src="/js/.         .js"></script>
+
+<div id="footer"></div>
+<!-- טעינה של ההאדר ופוטר מקובץ חיצוני -->
+<script src="/js/loadHeaderFooter.js"></script>
+
 </body>
 </html>
