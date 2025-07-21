@@ -1,5 +1,4 @@
-  <script>
-    $(document).ready(function () {
+$(document).ready(function () {
       $('#searchTerm').text(localStorage.getItem('searchQuery'));
       $('.product').click(function () {
         const product = {
@@ -13,4 +12,5 @@
         window.location.href = 'product.html';
       });
     });
-  </script>
+
+    
