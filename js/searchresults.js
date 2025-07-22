@@ -5,11 +5,11 @@ const results = [
   {
     name: "שמלה אדומה",
     price: "₪120",
-    img: "../images/dress1.jpg",
+    img: "images/floar_dress.jpeg",
     owner: "הילה"
   },
   {
-    name: "שמלה שחורה",
+    name: "שמלה פרחונית",
     price: "₪140",
     img: "images/black_mini_dress.jpeg",
     owner: "שירה"
