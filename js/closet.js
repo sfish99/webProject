@@ -12,7 +12,11 @@ if (rating > 50) {
 }
 
 const closetItems = [
-  { name: "שמלה שחורה", img: "../images/dress1.jpg", price: "110" },
+  { name: "שמלה שחורה", img: "images/black_mini_dress.jpeg", price: "110" },
+  
+  
+  
+  
   { name: "ג׳קט׳ינס", img: "../images/dress2.jpg", price: "90" }
 ];
 
