@@ -56,6 +56,20 @@ body.closet-page .btn-clicked {
   color: #fff !important;
 }
 
+body.closet-page #itemsCount {
+background-color: #e1f5fe;
+color: #0277bd;
+padding: 12px 18px;
+margin: 20px auto 10px;
+border: 1px solid #81d4fa;
+width: fit-content;
+text-align: center;
+font-weight: bold;
+font-size: 16px;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
 /* הוספת מדיה קווריז לפי גדלי מסך נפוצים */
 
 /* גודל קטן מאוד */
