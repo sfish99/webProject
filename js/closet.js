@@ -1,6 +1,6 @@
 /*עדן שקרוב */
 
-const owner = localStorage.getItem("closetOwner") || "לא ידוע";
+const owner = localStorage.getItem("closetOwner") || "לא צויין";
 document.getElementById("closetTitle").innerText = `הארון של ${owner}`;
 
 ‎// דירוג פיקטיבי + הדגשה עם class
