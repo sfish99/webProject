@@ -1,27 +1,18 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const closet = JSON.parse(localStorage.getItem("closetOwner"));
+const product = JSON.parse(localStorage.getItem("product"));
 
-  document.getElementById("closetTitle").innerHTML = "הארון של " + closet.owner;
+if (product) {
+  const container = document.getElementById("productDetails");
 
-  const container = document.getElementById("itemsContainer");
-  closet.items.forEach(item => {
-    const p = document.createElement("p");
-    p.textContent = item;
-    p.className = "itemBox";
-    container.appendChild(p);
-  });
+  container.innerHTML = `
+    <img src="${product.img}" alt="${product.name}" width="200"><br>
+    <h2>${product.name}</h2>
+    <p><strong>מחיר:</strong> ${product.price}</p>
+    <p><strong>בעלת הארון:</strong> ${product.owner}</p>
+    <button class="btn" onclick="goToCloset()">לעוד פריטים מהארון של ${product.owner}</button>;
+}
 
-  const ratingElement = document.getElementById("rating");
-  ratingElement.innerHTML = "דירוג הארון: " + "⭐".repeat(closet.rating);
-  if (closet.rating >= 4) {
-    ratingElement.classList.add("highlight");
-  }
-});
+function goToCloset() {
+  localStorage.setItem("closetOwner", product.owner);
+  window.location.href = "closet.html";
+}
 
-
-$(document).ready(function () {
-  $("#greetBtn").click(function () {
-    const name = $("#username").val();
-    $("#greeting").text("היי " + name + "ברוכה הבאה לארון").removeClass("hidden");
-  });
-});
