@@ -3,13 +3,20 @@
 const owner = localStorage.getItem("closetOwner") || "לא צויין";
 document.getElementById("closetTitle").innerText = `הארון של ${owner}`;
 
-‎// דירוג פיקטיבי + הדגשה עם class
+
 const rating = Math.floor(Math.random() * 100 + 1);
 const ratingArea = document.getElementById("ratingArea");
-ratingArea.innerHTML = `# ${rating} דירוגים`;
+ratingArea.innerHTML = `# ${rating} ׳דירוג;
 if (rating > 50) {
   ratingArea.classList.add("high-rating");
 }
+
+const numOfItems = document.querySelectorAll(".product").length;
+const itemsCountBox = document.createElement("div");
+itemsCountBox.id = "itemsCount";
+itemsCountBox.innerText = `פריטים זמינים להשכרה ${numOfItems} ׳קיימים 
+document.querySelector("main").prepend(itemsCountBox);
+
 
 const closetItems = [
   { name: "שמלה שחורה", img: "images/black_mini_dress.jpeg", price: "140" },
