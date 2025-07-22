@@ -1,18 +1,39 @@
-const product = JSON.parse(localStorage.getItem("product"));
+const owner = localStorage.getItem("closetOwner") || "לא ידוע";
+document.getElementById("closetTitle").innerText = `הארון של ${owner}`;
 
-if (product) {
-  const container = document.getElementById("productDetails");
-
-  container.innerHTML = `
-    <img src="${product.img}" alt="${product.name}" width="200"><br>
-    <h2>${product.name}</h2>
-    <p><strong>מחיר:</strong> ${product.price}</p>
-    <p><strong>בעלת הארון:</strong> ${product.owner}</p>
-    <button class="btn" onclick="goToCloset()">לעוד פריטים מהארון של ${product.owner}</button>;
+‎// דירוג פיקטיבי + הדגשה עם class
+const rating = Math.floor(Math.random() * 100 + 1);
+const ratingArea = document.getElementById("ratingArea");
+ratingArea.innerHTML = `# ${rating} דירוגים`;
+if (rating > 50) {
+  ratingArea.classList.add("high-rating");
 }
 
-function goToCloset() {
-  localStorage.setItem("closetOwner", product.owner);
-  window.location.href = "closet.html";
-}
+‎// הצגת פריטים מתוך הארון (נתונים לדוגמה)
+const closetItems = [
+  { name: "שמלה ירוקה", img: "../images/dress1.jpg", price: "110" },
+  { name: "ג׳קט ג׳ינס", img: "../images/dress2.jpg", price: "90" }
+];
+
+const container = document.getElementById("closetItems");
+
+closetItems.forEach((item) => {
+  const div = document.createElement("div");
+  div.className = "item product";
+  div.innerHTML = `
+    <img src="${item.img}" alt="${item.name}">
+    <h4>${item.name}</h4>
+    <p>${item.price} ₪</p>
+    <button class="btn viewBtn">לצפייה</button>
+  `;
+  container.appendChild(div);
+});
+
+‎// שימוש ב-jQuery לאירוע על כל הכפתורים
+$(document).ready(function() {
+  $(".viewBtn").click(function() {
+    alert("פרטים נוספים בקרוב...");
+    $(this).addClass("btn-clicked");
+  });
+});
 
