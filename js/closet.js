@@ -13,11 +13,9 @@ if (rating > 50) {
 
 const closetItems = [
   { name: "שמלה שחורה", img: "images/black_mini_dress.jpeg", price: "140" },
-  
   { name: "חליפה פסים", img: "images/striped_suit.jpeg", price: "100" }
   { name: " מכנס מנומר", img: "images/img4-sale-pants.jpeg", price: "99" }
-  
-  { name: " חולצת צווארון", img: "images/striped_suit.jpeg", price: "70" }
+  { name: " חולצת צווארון", img: "images/img8-sale-shirt.jpeg", price: "70" }
 ];
 
 const container = document.getElementById("closetItems");
