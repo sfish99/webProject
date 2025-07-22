@@ -1,0 +1,103 @@
+/*עדן שקרוב */
+
+body.closet-page {
+  background-color: #f5f9ff;
+  direction: rtl;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body.closet-page h2 {
+  color: #004b71;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body.closet-page #ratingArea {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+body.closet-page .high-rating {
+  color: #28a745;
+  font-weight: bold;
+}
+
+body.closet-page .results-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+body.closet-page .item.product {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  width: 260px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+body.closet-page .item.product:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.closet-page .item.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+body.closet-page .btn-clicked {
+  background-color: #444 !important;
+  color: #fff !important;
+}
+
+/* הוספת מדיה קווריז לפי גדלי מסך נפוצים */
+
+/* גודל קטן מאוד */
+@media (max-width: 455px) {
+  .signUpBtn {
+      font-size: 12px
+    }
+
+    h1 {
+        margin-top: 300px
+    }
+}
+
+
+/* גודל קטן */
+@media (min-width: 456px) and (max-width: 767px) {
+  .signUpBtn {
+      font-size: 14px
+    }
+
+    h1 {
+        margin-top: 200px
+    }
+}
+
+/* גודל בינוני */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .signUpBtn {
+        font-size: 16px
+      }
+  h1 {
+      margin-top: 130px
+  }
+}
+
+/* גודל גדול */
+@media (min-width: 1024px) {
+  .signUpBtn {
+        font-size: 18px
+      }
+
+  h1 {
+      margin-top: 80px
+  }
+
