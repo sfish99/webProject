@@ -1,3 +1,4 @@
+/*עדן שקרוב */
 
 const owner = localStorage.getItem("closetOwner") || "לא ידוע";
 document.getElementById("closetTitle").innerText = `הארון של ${owner}`;
