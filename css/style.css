@@ -124,8 +124,6 @@ width: 50px;
   border-radius: 5px;
 }
 
-
-
 .container {
   width: 100%;
   max-width: 900px;
@@ -314,4 +312,152 @@ section{
 
 .product:hover {
   background-color: #e6e6e6;
+}
+
+.rForm {
+  background-color: rgba(224, 242, 254, 0.9);
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.rForm h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rForm label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.rForm input[type="text"],
+.rForm input[type="date"],
+.rForm input[type="email"],
+.rForm input[type="password"],
+.rForm input[type="tel"],
+.rForm select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.rForm input[type="radio"],
+.rForm input[type="checkbox"] {
+  margin-inline-start: 5px;
+  margin-bottom: 12px;
+}
+
+.rForm button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #0f4c75, #3282b8);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.required {
+  color: red;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+#feedback {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.error-highlight {
+  background-color: #ffe6e6 !important;
+  border: 1px solid red;
+}
+
+.profileContainer {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profileImg {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3282b8;
+}
+
+.profileImg.highlighted {
+  box-shadow: 0 0 15px #3282b8;
+}
+
+.userDetails {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 400px;
+  background: #f9fbfd;
+  padding: 15px;
+  border-radius: 10px;
+}
+.profileRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.profileRow label {
+  font-weight: bold;
+}
+.profileImg.highlighted {
+  border: 3px solid #3282b8;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.orders-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9fbfd;
+    border-radius: 10px;
+    text-align: right;
+    font-family: sans-serif;
+}
+
+.order-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.status {
+    font-weight: bold;
+}
+
+.status.delivered {
+    color: green;
+}
+
+.status.pending {
+    color: orange;
 }
