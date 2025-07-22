@@ -5,13 +5,13 @@ const results = [
   {
     name: "שמלה אדומה",
     price: "₪120",
-    img: "images/floar_dress.jpeg",
+    img: "/images/floar_dress.jpeg",
     owner: "הילה"
   },
   {
     name: "שמלה פרחונית",
     price: "₪140",
-    img: "images/black_mini_dress.jpeg",
+    img: "/images/black_mini_dress.jpeg",
     owner: "שירה"
   }
 ];
@@ -34,4 +34,3 @@ function viewProduct(i) {
   localStorage.setItem("product", JSON.stringify(results[i]));
   window.location.href = "product.html";
 }
-    
