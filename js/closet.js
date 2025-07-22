@@ -1,3 +1,4 @@
+
 const owner = localStorage.getItem("closetOwner") || "לא ידוע";
 document.getElementById("closetTitle").innerText = `הארון של ${owner}`;
 
@@ -9,10 +10,9 @@ if (rating > 50) {
   ratingArea.classList.add("high-rating");
 }
 
-‎// הצגת פריטים מתוך הארון (נתונים לדוגמה)
 const closetItems = [
-  { name: "שמלה ירוקה", img: "../images/dress1.jpg", price: "110" },
-  { name: "ג׳קט ג׳ינס", img: "../images/dress2.jpg", price: "90" }
+  { name: "שמלה שחורה", img: "../images/dress1.jpg", price: "110" },
+  { name: "ג׳קט׳ינס", img: "../images/dress2.jpg", price: "90" }
 ];
 
 const container = document.getElementById("closetItems");
@@ -24,15 +24,15 @@ closetItems.forEach((item) => {
     <img src="${item.img}" alt="${item.name}">
     <h4>${item.name}</h4>
     <p>${item.price} ₪</p>
-    <button class="btn viewBtn">לצפייה</button>
+    <button class="btn viewBtn">לצפייה בפריט</button>
   `;
   container.appendChild(div);
 });
 
-‎// שימוש ב-jQuery לאירוע על כל הכפתורים
+
 $(document).ready(function() {
   $(".viewBtn").click(function() {
-    alert("פרטים נוספים בקרוב...");
+    alert("פריטים נוספים בקרוב...");
     $(this).addClass("btn-clicked");
   });
 });
