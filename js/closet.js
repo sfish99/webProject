@@ -12,12 +12,12 @@ if (rating > 50) {
 }
 
 const closetItems = [
-  { name: "שמלה שחורה", img: "images/black_mini_dress.jpeg", price: "110" },
+  { name: "שמלה שחורה", img: "images/black_mini_dress.jpeg", price: "140" },
   
+  { name: "חליפה פסים", img: "images/striped_suit.jpeg", price: "90" }
+  { name: "גחליפה פסים", img: "images/striped_suit.jpeg", price: "90" }
   
-  
-  
-  { name: "ג׳קט׳ינס", img: "../images/dress2.jpg", price: "90" }
+  { name: "גחליפה פסים", img: "images/striped_suit.jpeg", price: "90" }
 ];
 
 const container = document.getElementById("closetItems");
