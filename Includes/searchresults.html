@@ -2,37 +2,31 @@
 <html lang="he">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>תוצאות חיפוש</title>
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-<body> class="search page">
-  <main>
-  <h1>תוצאות עבור: <span id="searchTerm"></span></h1>
+<body class="search-page">
 
+  <div id="header"></div>
 
+  <main class="container">
+    <h2>תוצאות עבור: <span id="searchTerm"></span></h2>
+    <div id="resultsContainer" class="results-container"></div>
+  </main>
 
+  <div id="footer"></div>
 
-  <div class="product" data-name="שמלה שחורה" data-price="180₪" data-size="M" data-closet='{"owner":"שירה ","rating":4,"items":["שמלה שחורה","עליונית ורודה"]}'>
-    <img src=" images/black_mini_dress.jpeg" width="150">
-    <p>שמלה שחורה</p>
-  </div>
-<!-- jquery קישור ל -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- סליידר ג׳אווה סקריפט -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+‎  <!-- טעינת header/footer -->
+  <script src="../JS/loadHeaderFooter.js"></script>
 
-<!-- טעינה של סקריפט של העמוד מקובץ חיצוני -->
-<script src="/js/js/searchresults.js"></script>
-
-<div id="footer"></div>
-<!-- טעינה של ההאדר ופוטר מקובץ חיצוני -->
-<script src="/js/loadHeaderFooter.js"></script>
-
-  <h2 id="productName"></h2>
-  <p id="productPrice"></p>
-  <p id="productSize"></p>
-  <button id="toCloset">לעוד פריטים מהארון הזה</button>
-
+‎  <!-- קובץ JavaScript לדף תוצאות החיפוש -->
+  <script src="../JS/search.js"></script>
 </body>
 </html>
+
