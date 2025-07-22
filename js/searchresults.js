@@ -11,7 +11,7 @@ const results = [
   {
     name: "שמלה שחורה",
     price: "₪140",
-    img: "images/dress2.jpg",
+    img: "images/black_mini_dress.jpeg",
     owner: "שירה"
   }
 ];
