@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>הפרופיל שלי</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/profile.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="profileContainer">
+        <h1 id="welcomeTitle"></h1>
+
+        <img src="../images/defaultProfile.png" alt="תמונת פרופיל" class="profileImg">
+        
+        <div class="userDetails">
+            <div class="profileRow"><label>שם פרטי:</label> <span id="fname"></span></div>
+            <div class="profileRow"><label>שם משפחה:</label> <span id="lname"></span></div>
+            <div class="profileRow"><label>דוא"ל:</label> <span id="email"></span></div>
+            <div class="profileRow"><label>טלפון:</label> <span id="phone"></span></div>
+            <div class="profileRow"><label>מין:</label> <span id="gender"></span></div>
+            <div class="profileRow"><label>גיל:</label> <span id="age"></span></div>
+            <div class="profileRow"><label>קבלת עדכונים:</label> <span id="agree"></span></div>
+        </div>
+
+
+        <button class="btn" onclick="goToOrders()">הזמנות קודמות</button>
+        <button class="btn">רשימת משאלות</button>
+
+    </div>
+
+    <div id="footer"></div>
+    <script src="../js/loadHeaderFooter.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/registration.js" defer></script>
+</head>
+<body>
+<div id="header"></div>
+
+<div class="regForm">
+    <form class="rForm" method="post" action="../Includes/add_user.php">
+        <h1>הרשמה לאתר</h1>
+
+        <label for="fname">שם פרטי:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="lname">שם משפחה:</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <label for="birthdate">תאריך לידה:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+
+        <label>מין:</label>
+        <label><input type="radio" name="gender" value="זכר">זכר</label>
+        <label><input type="radio" name="gender" value="נקבה">נקבה</label>
+        <label><input type="radio" name="gender" value="לא מעוניין לציין">לא מעוניין לציין</label>
+
+        <label for="phone">מספר טלפון:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0521234567" required>
+
+        <label for="email">דוא"ל:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">סיסמה:</label>
+        <input type="password" id="password" name="password" minlength="6" required>
+
+        <label for="agree"><input type="checkbox" id="agree" name="agree">אני מאשר/ת קבלת עדכונים</label>
+            
+        <button class="btn" type="submit">שליחה</button>
+        <p id="feedback" style="display:none;"></p>
+    </form>
+</div>
+
+<div id="footer"></div>
+<!-- טעינה שלההאדר ופוטר מקובץ חיצוני -->
+<script src="../js/loadHeaderFooter.js"></script>
+</body>
+</html>

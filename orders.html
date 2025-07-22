@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>הזמנות קודמות</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="../js/orders.js" defer></script>
+</head>
+<body>
+    <div class="orders-container">
+        <h1 id="pageTitle">ההזמנות שלי</h1>
+
+        <div class="order-card">
+            <h2>#100245</h2>
+            <p><strong>תאריך:</strong> 22 ביולי 2025</p>
+            <p><strong>מוצר:</strong> שמלה</p>
+            <p><strong>סטטוס:</strong> <span class="status delivered">נשלח</span></p>
+            <button class="btn" onclick="showThanks()">קיבלתי את ההזמנה</button>
+        </div>
+
+        <div class="order-card">
+            <h2>#100123</h2>
+            <p><strong>תאריך:</strong> 5 ביולי 2025</p>
+            <p><strong>מוצר:</strong> חליפת בלייזר</p>
+            <p><strong>סטטוס:</strong> <span class="status pending">בטיפול</span></p>
+            <button class="btn" onclick="showThanks()">קיבלתי את ההזמנה</button>
+        </div>
+    </div>
+</body>
+</html>
