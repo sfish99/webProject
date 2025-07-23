@@ -6,19 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("lname").textContent = user.lname;
         document.getElementById("agree").textContent = user.agree ? "כן" : "לא";
         document.getElementById("email").textContent = user.email;
-        document.getElementById("birthdate").textContent = user.birthdate;
         document.getElementById("gender").textContent = user.gender;
         document.getElementById("phone").textContent = user.phone;
-        document.getElementById("age").textContent = calculateAge(user.birthdate);
+        document.getElementById("age").textContent = new Date().getFullYear() - new Date(user.birthdate).getFullYear();
    
         // שינוי כותרת לפי מין
-        const welcome = document.getElementById("welcomeTitle");
         if (user.gender === "נקבה") {
-            welcome.textContent = `ברוכה הבאה, ${user.fname}!`;
+            document.getElementById("welcomeTitle").textContent = `ברוכה הבאה, ${user.fname}!`;
         } else if (user.gender === "זכר") {
-            welcome.textContent = `ברוך הבא, ${user.fname}!`;
+            document.getElementById("welcomeTitle").textContent = `ברוך הבא, ${user.fname}!`;
         } else {
-            welcome.textContent = `ברוך/ה הבא/ה, ${user.fname}!`;
+            document.getElementById("welcomeTitle").textContent = `ברוך/ה הבא/ה, ${user.fname}!`;
         }
 
         // הדגשת תמונה דינמית

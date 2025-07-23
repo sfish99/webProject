@@ -1,49 +1,46 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+// פרטי ההתחברות למסד הנתונים
 $host = "localhost";
 $user = "ronbe2_user";
 $pass = "ronbe2_user";
-$db = "ronbe2_project";
+$db   = "ronbe2_project";
 
 // התחברות למסד הנתונים
 $conn = new mysqli($host, $user, $pass, $db);
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    http_response_code(500);
+    echo "Connection failed: " . $conn->connect_error;
+    exit();
 }
 
 // קבלת הנתונים מהטופס
-$fname = $_POST['fname'];
-$lname = $_POST['lname'];
-$email = $_POST['email'];
-$birthdate = $_POST['birthdate'];
-$gender = $_POST['gender'];
-$phone = $_POST['phone'];
-$password = $_POST['password'];
-$agree = isset($_POST['agree']) ? 1 : 0;
+$fname     = $_POST['fname']     ?? '';
+$lname     = $_POST['lname']     ?? '';
+$email     = $_POST['email']     ?? '';
+$birthdate = $_POST['birthdate'] ?? '';
+$gender    = $_POST['gender']    ?? '';
+$phone     = $_POST['phone']     ?? '';
+$password  = $_POST['password']  ?? '';
+$agree     = isset($_POST['agree']) ? 1 : 0;
 
-// הוספה לטבלה
+// הצפנת סיסמה
+$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+// שאילתה להכנסת נתונים
 $sql = "INSERT INTO users (fname, lname, email, birthdate, gender, phone, password, agree)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 $stmt = $conn->prepare($sql);
-$stmt->bind_param("sssssssi", $fname, $lname, $email, $birthdate, $gender, $phone, $password, $agree);
+$stmt->bind_param("sssssssi", $fname, $lname, $email, $birthdate, $gender, $phone, $hashedPassword, $agree);
 
-// ביצוע ושליחת הודעה מתאימה
+// שליחת תגובה
 if ($stmt->execute()) {
-    echo "
-    <script>
-        const user = {
-            fname: " . json_encode($fname) . ",
-            lname: " . json_encode($lname) . ",
-            email: " . json_encode($email) . ",
-            birthdate: " . json_encode($birthdate) . ",
-            gender: " . json_encode($gender) . ",
-            phone: " . json_encode($phone) . ",
-            agree: " . json_encode($agree) . "
-        };
-        localStorage.setItem('user', JSON.stringify(user));
-        window.location.href = 'profile.html';
-    </script>";
+    echo "SUCCESS";
 } else {
-    echo "<h2 style='color:red;text-align:center;'>קרתה שגיאה בהרשמה.</h2>";
+    http_response_code(500);
+    echo "שגיאה בשמירה: " . $stmt->error;
 }
 
 $stmt->close();
